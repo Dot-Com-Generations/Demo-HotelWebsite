@@ -1,0 +1,333 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+footer {
+  margin-top: 10px;
+  overflow-x: hidden;
+  font-family: Montserrat;
+}
+
+footer .strip1 {
+  background-color: #fffee9;
+  color: black;
+}
+
+footer .strip1 h5 {
+  font-weight: 500;
+}
+
+footer .strip1 a,
+footer .strip1 i {
+  text-decoration: none;
+  color: black;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+footer .strip1 a:hover,
+footer .strip1 i:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+footer .strip2 {
+  color: black;
+  background-color: #dddddd;
+}
+
+footer .strip2 p {
+  font-weight: 500;
+}
+
+footer .strip2 a {
+  color: #000;
+  font-weight: 500;
+}
+
+footer .strip3 {
+  font-weight: 500;
+  background-color: #000;
+  color: #f6f6f6;
+}
+
+footer a {
+  color: #f6f6f6;
+  font-weight: 500;
+}
+
+footer .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav {
+  position: absolute;
+}
+
+nav .navbar-brand {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+}
+
+nav ul li a {
+  font-family: 'Montserrat', sans-serif;
+  color: #fff !important;
+  font-weight: 500;
+}
+
+nav .active a {
+  color: #ffffff !important;
+  font-weight: bold;
+}
+
+nav .nav-cta {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  color: #3a3a3a;
+  background: #fff7b3;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+nav .nav-cta a.book-btn {
+  color: #3a3a3a !important;
+}
+
+nav .nav-cta a.book-btn:hover {
+  text-decoration: none !important;
+}
+
+nav .nav-cta:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background: #fdf7c4;
+}
+
+.ham {
+  color: black !important;
+}
+
+@media (max-width: 992px) {
+  #navbarSupportedContent {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #fafafa;
+}
+
+.scrolled {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  background-color: #fff !important;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.scrolled ul li a {
+  color: #3a3a3a !important;
+}
+
+.scrolled .ham-menu {
+  color: black !important;
+}
+
+main {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: relative;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+main .hero-text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 108px;
+  line-height: 132px;
+  color: white;
+  text-align: center;
+}
+
+main .main-content {
+  position: absolute;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100%;
+}
+
+main .main-content p {
+  text-align: center;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  color: #fff;
+  font-size: 24px;
+  line-height: 49px;
+}
+
+main .hero-img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+}
+
+main img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card-body {
+  position: relative !important;
+}
+
+.desc {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  color: #3a3a3a;
+}
+
+.card-text {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 180%;
+}
+
+.arrow {
+  position: relative;
+  cursor: pointer;
+  z-index: 1;
+  padding: 0.5rem;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  width: 200px;
+  line-height: 17px;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.arrow img {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.arrow img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.arrow::before {
+  content: '';
+  position: absolute;
+  background-color: #3a3a3a;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  bottom: 0;
+  right: 0;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: -webkit-transform 200ms ease-in-out;
+  transition: -webkit-transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  border-radius: 7px;
+}
+
+.arrow:hover {
+  color: white;
+}
+
+.arrow:hover img {
+  -webkit-transform: translateX(350%);
+          transform: translateX(350%);
+}
+
+.arrow:hover::before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.arrow:focus::before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.scrolled #navbarSupportedContent {
+  background: none !important;
+}
+
+@media (min-width: 320px) {
+  main .main-content .hero-text {
+    font-size: 48px;
+    line-height: 80px;
+  }
+  main .main-content p {
+    font-size: 16px !important;
+  }
+  main img {
+    height: 100vh;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+@media (min-width: 576px) {
+  main .main-content .hero-text {
+    font-size: 62px;
+    line-height: 80px;
+  }
+  main .main-content p {
+    font-size: 16px !important;
+  }
+}
+
+@media (min-width: 768px) {
+  main .main-content .hero-text {
+    font-size: 88px;
+  }
+  main .main-content p {
+    font-size: 20px !important;
+  }
+}
+/*# sourceMappingURL=style-services.css.map */

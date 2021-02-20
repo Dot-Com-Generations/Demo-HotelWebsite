@@ -1,0 +1,198 @@
+@import 'footer';
+@import 'navbar';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; scroll-behavior: smooth;
+}
+body {
+  background: #fafafa;
+}
+
+.scrolled {
+  transition: all 0.2s ease;
+  background-color: #fff !important;
+  ul li a {
+    color: #3a3a3a !important;
+  }
+  .ham-menu {
+    color: black !important;
+  }
+  box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+  #navbarSupportedContent {
+    background: none;
+  }
+}
+main {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: relative;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+  .hero-text {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 88px;
+    line-height: 132px;
+    color: white;
+    text-align: center;
+  }
+  .main-content {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+
+    p {
+      text-align: center;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 500;
+      color: #fff;
+      font-size: 20px;
+      line-height: 49px;
+    }
+  }
+  .hero-img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+  }
+  img {  filter: blur(2px);
+    -webkit-filter: blur(2px);
+    object-fit: cover;
+  }
+}
+.card {
+  .card-header {
+    background-color: #dddddd;
+    .btn {
+      color: #000;
+    }
+  }
+  .card-body{
+    background-color: #3a3a3a;
+    color: white !important;
+  }
+}
+section {
+  h1 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 88px;
+
+    color: #3a3a3a;
+  }
+  font-family: Montserrat;
+  font-size: 14px;
+  label {
+    font-weight: 500;
+  }
+  .google-maps {
+    position: relative;
+    padding-bottom: 75%; // This is the aspect ratio
+    height: 0;
+    overflow: hidden;
+  }
+  .google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+  .submit-btn {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    width: 100%;
+    font-weight: bold;
+    color: #3a3a3a;
+    background: #fff7b3;
+    transition: all 0.3s ease;
+  }
+  .submit-btn:hover {
+    transform: scale(1.05);
+  }
+}
+.faq {
+  .btn:focus {
+    box-shadow: none !important;
+  }
+  h2 {
+    text-align: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 88px;
+
+    color: #3a3a3a;
+  }
+  .card-body {
+    color: #3a3a3a;
+    font-weight: 500;
+    font-family: Montserrat;
+  }
+}
+@media (min-width: 320px) {
+  main {
+    height: 100vh;
+    .main-content {
+      .hero-text {
+        font-size: 48px;
+        line-height: 80px;
+      }
+      p {
+        font-size: 16px !important;
+      }
+    }
+  }
+}
+@media (min-width: 576px) {
+  main {
+    height: 100vh;
+    .main-content {
+      .hero-text {
+        font-size: 64px;
+        line-height: 80px;
+      }
+      p {
+        font-size: 16px !important;
+      }
+    }
+  }
+}
+@media (min-width: 768px) {
+  main {
+    height: 100vh;
+    .main-content {
+      .hero-text {
+        font-size: 88px;
+      }
+      p {
+        font-size: 20px !important;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  main {
+    height: 100vh;
+  }
+}
+@media (max-width: 992px) {
+  section {
+    h1 {
+      font-size: 40px;
+    }
+  }
+}
